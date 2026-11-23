@@ -14,7 +14,7 @@ jobs:
 
       - name: Unzip Admin Project
         run: |
-          unzip -o Janapad-admin.zip -d extracted
+          unzip -o janapad-admin.zip -d extracted
           ROOT_DIR=$(dirname "$(find extracted -name 'settings.gradle.kts' | head -n 1)")
           mv "$ROOT_DIR" project
 
